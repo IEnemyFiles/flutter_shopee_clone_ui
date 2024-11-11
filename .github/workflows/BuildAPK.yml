@@ -14,13 +14,13 @@ jobs:
       # Checkout the repository
       - uses: actions/checkout@v4
 
-      # Install Flutter
+      # Install Flutter 3.19.0
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: 'stable'
 
-      # Install dependencies
+      # Install dependencies from pubspec.yaml
       - name: Install dependencies
         run: flutter pub get
 
